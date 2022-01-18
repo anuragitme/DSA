@@ -107,6 +107,9 @@ struct node * AddToEnd(struct node* start,int data){
 void SelectionSort(struct node* start){
         struct node *i,*j;
         int tmp;
+        if(start==NULL){
+            return start;
+        }
         for(i=start;i->link!=NULL;i=i->link){
             for(j=i->link;j!=NULL;j=j->link){
                 if(i->info>j->info){
@@ -121,6 +124,9 @@ void SelectionSort(struct node* start){
 void BubbleSort(struct node* start){
     struct node *i,*j,*end;
     int tmp;
+    if(start==NULL){
+        return start;
+    }
     for(end=NULL;end!=start->link;end=j){
         int flag=1;
         for(i=start;i->link!=end;i=i->link){
