@@ -86,7 +86,7 @@ struct node *mergez(struct node* start1,struct node * start2){
     z=p;
     while(q!=NULL){
         temp=q;
-        p=insert(p,q->info);
+        p=insertz(p,q->info);
         q=q->next;
         free(temp);
     }
