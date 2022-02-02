@@ -14,6 +14,7 @@ struct node* newNode(int dataz){
     temp->right=NULL;
     return temp;
 }
+
 int main(){
     struct node* root=NULL;
     root=newNode(1);
