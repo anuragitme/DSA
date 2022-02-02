@@ -34,7 +34,7 @@ node *buildTreeinpre(int preorder[], int inorder[], int start, int end)
     int curr = preorder[i];
     i++;
     node *root = new node(curr);
-    if (start == end)
+    if (start == end)   // not necessary as it is handled already;
     {
         return root;
     }
