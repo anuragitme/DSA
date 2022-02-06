@@ -53,8 +53,8 @@ int main(){
             2       3 
           /        / \
          4        5   6
-         here, right child of 2,4,5,6 will act as left threads
-         and left child of 4,5,6 right threads
+         here, right child of 2,4,5,6 will act as threads
+         and left child of 4,5,6 threads
          left threads points to their inorder predecessor
          right threads pointts to thein inorder successor
     */
